@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    long long int d;
+    scanf("%d %d %d %lld",&a,&b,&c,&d);
+    if(((a+b)-c)==d){
+        printf("YES\n");    //r
+    }
+    else if(((a-b)+c)==d){
+        printf("YES\n");    //r
+    }
+    // else if(((a+b)*c)==d){
+    //     printf("YES\n");
+    // }
+    else if(((a*b)+c)==d){
+       printf("YES\n");     //r
+    }
+    else if((a+(b*c))==d){
+        printf("YES\n");     //r
+    }
+   
+    // else if(((a+c)*b)==d){
+    //     printf("YES\n");
+    // }
+    // minus e khela
+
+    // else if (((a-b)*c)==d){
+    //    printf("YES\n");
+    // }
+    else if(((a*b)-c)==d){
+        printf("YES\n");    //r
+    }
+    
+    else if((a-(b*c))==d){
+        printf("YES\n");    //e
+    }
+    
+    // else if(((a-c)*b)==d){
+    //     printf("YES\n");
+    // }
+   
+    else{
+        printf("NO\n");
+    }
+    
+    return 0;
+}
